@@ -1,0 +1,24 @@
+	1. download file pake gitclone 
+2. buka file di vscode 
+3. bikin database baru di phpmyadmin
+4. ubah file .env sesuaikan nama database
+5. buka terminal ketik "composer install" (tanpa petik)
+6. ketik "npm install" (gabisa gapapa)
+7. ketik "php artisan key:generate"
+8. ketik "php artisan migrate --seed"
+9. terakhir ketik "php artisan serve"
+
+username  ==
+email : superadmin@gmail.com
+password : 1234567
+
+untuk membuat user di terminal
+
+php artisan tingker (di terminal) 
+1. $user = new \App\Models\User();
+2. $user->get();
+2. $user->name = 'Admin';
+3. $user->email = 'admin@gmail.com';
+4. $user->password = bcrypt ('123456');
+5. $user->level = '1';
+6. $user->save();
